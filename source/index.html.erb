@@ -1,0 +1,106 @@
+---
+title: Home
+---
+
+<section id="slider_wrapper" class="slider_wrapper full_page_photo">
+    <div id="main_flexslider" class="flexslider">
+        <ul class="slides">
+            <li class="item" style="background-image: url(images/sliders/market1.jpg)">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="skincolored">Every <strong>Saturday</strong> and <strong>Sunday</strong> <br></h1>
+                    </div>
+                </div>
+            </li>
+            <li class="item" style="background-image: url(images/sliders/market2.jpg)">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Customers are <strong>Always Free</strong> </h1>
+                    </div>
+                </div>
+            </li>
+            <li class="item" style="background-image: url(images/sliders/market3.jpg)">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="skincolored">The <strong>best vendor rates</strong> in CT!</h1>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+<div class="main">
+    <div class="container">
+
+        <br>
+
+        <section class="call_to_action">
+            <h2>
+               <center><i class="fa fa-flag-checkered"></i></center><br>
+               <%= data.content.week.first %>
+            </h2>
+        </section>
+
+        <hr>
+
+        <section class="call_to_action">
+          <h1>Come visit The Woodbury CT Antiques and Flea Market</h1><br>
+
+            <h4>We are open Saturday and Sunday mornings from 7:30 am until 2:30 pm. Free admission and free parking! Pets are not allowed.</h4>
+            <h4>To become a vendor Contact us or just drive in after 6:30 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table. The fee for Saturday is $20 and the fee for Sunday is $10. Reduced rates apply to vendors who need more than one space.
+            </h4>
+            <div>
+              <span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">For more information please call: (203) 263-6217, email:</span>
+              <a href="mailto:thenewwoodburyfleamarket@gmail.com" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">thenewwoodburyfleamarket@gmail.com</a>
+              <span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">, or </span>
+              <a href="https://www.facebook.com/woodburyflea/" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">like us on Facebook!</a>
+            </div><br>
+
+            <%= link_to 'Get Directions!', '/directions', :class => 'btn btn-primary btn-lg' %>
+            <%= link_to 'Facebook Message Us!', 'https://www.facebook.com/woodburyflea/', :class=> 'btn btn-success btn-lg' %>
+        </section>
+
+        <hr>
+        <section class="call_to_action">
+            <h1><i class="fa fa-flag-checkered"></i></h1>
+            <h2>
+              <%= data.content.season.first %>
+            </h2>
+        </section>
+
+        <section class="features_teasers_wrapper">
+            <div class="row">
+                <div class="feature_teaser col-sm-4 col-md-4">
+                    <h1><i class="fa fa-coffee fa-2"></i></h1>
+                    <h3>About the Market</h3>
+                    <p>
+                    <address>
+                        <strong>The Woodbury Flea Market</strong><br>
+                        Address: 44 Sherman Hill Road (RT64)<br>
+                        Woodbury CT, 06798<br>
+                        <abbr title="phone"> (203) 263-6217 </abbr>
+                    </address>
+                    </p>
+                </div>
+                <div class="feature_teaser col-sm-4 col-md-4">
+                    <h1><i class="fa fa-group fa-2"></i></h1>
+                    <h3>Vendors</h3>
+                    <p>Gus and Anne Kaloidis took over the market in 2006, and have been running it as a family business
+                        ever since... <% link_to '/gus' do %>
+                            <small>More...</small>
+                        <% end %></p>
+                </div>
+                <div class="feature_teaser col-sm-4 col-md-4">
+                    <h1><i class="fa fa-user fa-2"></i></h1>
+                    <h3>About the Owner</h3>
+                    <p>Gus Kaloidis has been in the restaurant business for almost forty years, until he sold his last
+                        restaurant (Elenni's) six years ago... (203) 263-6217, <a
+                            href="mailto:thenewwoodburyfleamarket@gmail.com">thenewwoodburyfleamarket@gmail.com</a>, or
+                        <a href="https://www.facebook.com/pages/Woodbury-Antiques-Flea-Market/194628543955095">like us
+                            on Facebook!</a><br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
