@@ -1,0 +1,1 @@
+$(function(){var l=$(".menu_container"),n=$("ul",l);$(".mobile_collapser",l).on("click",function(){n.toggleClass("collapsed")})});
