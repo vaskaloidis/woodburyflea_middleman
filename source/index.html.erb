@@ -40,15 +40,23 @@ title: Home
                <center><i class="fa fa-flag-checkered"></i></center><br>
                <%= data.content.week.first %>
             </h2>
+            <hr>
+            <h2>
+              <%= data.content.season.first %>
+            </h2>
         </section>
 
-        <hr>
+        <center>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </center>
 
-        <section class="call_to_action">
+        <section class="call_to_action home_page_intro">
           <h1>Come visit The Woodbury CT Antiques and Flea Market</h1><br>
 
-            <h4>We are open Saturday and Sunday mornings from 7:30 am until 2:30 pm. Free admission and free parking! Pets are not allowed.</h4>
-            <h4>To become a vendor Contact us or just drive in after 6:30 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table. The fee for Saturday is $20 and the fee for Sunday is $10. Reduced rates apply to vendors who need more than one space.
+            <h4>We are open Saturday and Sunday mornings from 7:30 am until 2:30 pm. Free admission and free parking!</h4>
+            <h4>To become a vendor Contact us or just drive in after 6:30 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table. The vendor fee for <strong>Saturday is $20</strong> and the fee for <strong>Sunday is $10</strong>. Customers are <strong>always free!</strong> Reduced rates apply to vendors who need more than one space.
             </h4>
             <div>
               <span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">For more information please call: (203) 263-6217, email:</span>
@@ -60,15 +68,6 @@ title: Home
             <%= link_to 'Get Directions!', '/directions', :class => 'btn btn-primary btn-lg' %>
             <%= link_to 'Facebook Message Us!', 'https://www.facebook.com/woodburyflea/', :class=> 'btn btn-success btn-lg' %>
         </section>
-
-        <hr>
-        <section class="call_to_action">
-            <h1><i class="fa fa-flag-checkered"></i></h1>
-            <h2>
-              <%= data.content.season.first %>
-            </h2>
-        </section>
-
         <section class="features_teasers_wrapper">
             <div class="row">
                 <div class="feature_teaser col-sm-4 col-md-4">
